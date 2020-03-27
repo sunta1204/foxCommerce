@@ -33,20 +33,6 @@
         opacity: 1;
       }
     }
-
-    #sidebar {
-      height: 800px;
-      width: 300px;
-      margin: 0px 0px 0px 0px;
-    }
-
-    @media only screen and (max-width: 450px) {
-      #sidebar {
-        height: 800px;
-        width: 150px;
-        margin: 0px 0px 0px 0px;
-      }
-    }
   </style>
 </head>
 
@@ -85,47 +71,49 @@
                   </li>
 
                     <li class="mb-2">
-                      <a href="gallery.html" class="collapsible-header waves-effect" style="font-size: 18px;">
-                      <i class="fas fa-clipboard-list" style="margin-right: 0px; color: #ef6c00;"></i>&nbsp;
-                      <label style="color: #ef6c00;font-size: 16px;" >ตรวจสอบรายการสั่งซื้อ </label>
-                    </a> 
+                      <a href="gallery.html" class=" waves-effect" style="font-size: 18px;">
+                        <i class="fas fa-clipboard-list" style="margin-right: 0px; color: #ef6c00;"></i>&nbsp;
+                        <label style="color: #ef6c00;font-size: 16px;" >ตรวจสอบรายการสั่งซื้อ </label>
+                      </a> 
                     </li>
 
-                    <!--<li class="mb-2" >
-                      <a class="collapsible-header waves-effect arrow-r" style="font-size: 18px;"><i class="far fa-hand-pointer"></i>&nbsp; Room Type <i class="fas fa-angle-down rotate-icon"></i></a>
-                        <div class="collapsible-body">
-                            <ul class="list-unstyled">
-                                <li><a href="air_room.html" class="waves-effect" style="font-size: 14px;">Air-conditioned Room</a>
-                                </li>
-                                <li><a href="fan_room.html" class="waves-effect" style="font-size: 14px;">Fan Room</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>-->
-
                     <li  class="mb-2">
-                      <a href="location.html" class="collapsible-header waves-effect "style="font-size: 18px;">
+                      <a href="location.html" class=" waves-effect "style="font-size: 18px;">
                         <i class="fas fa-cash-register" style="margin-right: 0px;color: #ef6c00;"></i>&nbsp;
                         <label style="color: #ef6c00;font-size: 16px;" > เปลี่ยน/ต่ออายุแพ็คเกจ</label>  
                       </a>
                     </li>
-                    <p style="background-color: #757575; border-bottom: 1px solid; opacity: 0.2; margin: 0px 32px 0px 32px;"></p>
-                    <li class="mb-2">
-                      <a href="room_detail.html" class="collapsible-header waves-effect "style="font-size: 18px;">
-                        <i class="fas fa-user-edit" style="margin-right: 0px;color: #ef6c00;"></i>&nbsp;
-                        <label style="color: #ef6c00;font-size: 16px;" > แก้ไขข้อมูลส่วนตัว</label>
-                      </a>  
-                    </li>
                     
-                    <li class="mb-2">
-                      <a href="room_detail.html" class="collapsible-header waves-effect "style="font-size: 18px;">
-                        <i class="fas fa-key" style="margin-right: 0px;color: #ef6c00;"></i>&nbsp;
-                        <label style="color: #ef6c00;font-size: 16px;" > เปลี่ยนรหัสผ่าน</label>
+                    <hr>
+                    
+                    <li class="mb-2" >
+                      <a class="collapsible-header waves-effect arrow-r" style="font-size: 18px;">
+                        <i class="fas fa-user-tie" style="margin-right: 0px; color: #ef6c00;"></i>&nbsp;
+                        <label style="color: #ef6c00;font-size: 16px;" > ข้อมูลส่วนตัว </label>  
+                        <i class="fas fa-angle-down rotate-icon" style="margin-right: 0px;margin-right: 15px; color: #ef6c00;"></i>
                       </a>
+                        <div class="collapsible-body waves-effect waves-light">
+                            <ul class="list-unstyled">
+                                <li>
+                                  <a href="air_room.html" class="waves-effect" style="font-size: 14px;">
+                                    <i class="fas fa-user-edit" style="margin-right: 0px;color: #ef6c00;"></i>&nbsp;
+                                    <label style="color: #ef6c00;font-size: 16px;" > แก้ไขข้อมูลส่วนตัว</label>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="fan_room.html" class="waves-effect" style="font-size: 14px;">
+                                    <i class="fas fa-key" style="margin-right: 0px;color: #ef6c00;"></i>&nbsp;
+                                    <label style="color: #ef6c00;font-size: 16px;" > เปลี่ยนรหัสผ่าน</label>
+                                  </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
+
+                    <hr>
                     
                     <li class="mb-2">
-                      <a href="room_detail.html" class="collapsible-header waves-effect "style="font-size: 18px;">
+                      <a href="room_detail.html" class=" waves-effect "style="font-size: 18px;">
                         <i class="fas fa-sign-out-alt" style="margin-right: 0px;color: #ef6c00;"></i>&nbsp;
                         <label style="color: #ef6c00;font-size: 16px;" > ออกจากระบบ</label>
                       </a>
@@ -162,64 +150,7 @@
 </header>
 <!--/.Double navigation-->
 
-  <!--
-  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-  <ul class="sidenav sidenav-fixed" id="slide-out">
-    <li>
-      <a class="sidenav-close right" style="padding: 0px 0px 0px 10px;"><i class="fas fa-chevron-left"
-          style="margin-right: 0px;"></i></a>
-    </li>
-    <li style="margin: 0px 75px -20px 75px;">
-      <img src="../../logo/logo.png" style="width: auto;height: 150px; margin-bottom: -10px;">
-    </li>
-    <li>
-      <nav>
-        <div class="nav-wrapper">
-          <form>
-            <div class="input-field orange lighten-3">
-              <input id="search" type="search" required>
-              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-              <i class="material-icons">close</i>
-            </div>
-          </form>
-        </div>
-      </nav>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fas fa-plus-square" style="margin-right: 0px;color: #ef6c00;"></i>
-        <label style="color: #ef6c00;font-size: 16px;" >สร้างเพจขายสินค้า</label>
-      </a>
-    </li>
-    <li>
-      <a href="#"><i class="fas fa-clipboard-list" style="margin-right: 0px; color: #ef6c00;"></i><label
-          style="color: #ef6c00;font-size: 16px;" > ตรวจสอบรายการสั่งซื้อ </label></a>
-    </li>
-    <li>
-      <a href="#"><i class="fas fa-cash-register" style="margin-right: 0px;color: #ef6c00;"></i><label
-          style="color: #ef6c00;font-size: 16px;" > เปลี่ยน/ต่ออายุแพ็คเกจ</label></a>
-    </li>
-    <p style="background-color: #757575; border-bottom: 1px solid; opacity: 0.2; margin: 0px 32px 0px 32px;"></p>
-    <li>
-      <a href="#"><i class="fas fa-user-edit" style="margin-right: 0px;color: #ef6c00;"></i><label
-          style="color: #ef6c00;font-size: 16px;" > แก้ไขข้อมูลส่วนตัว</label></a>
-    </li>
-    <li>
-      <a href="#"><i class="fas fa-key" style="margin-right: 0px;color: #ef6c00;"></i><label
-          style="color: #ef6c00;font-size: 16px;" > เปลี่ยนรหัสผ่าน</label></a>
-    </li>
-    <p style="background-color: #757575; border-bottom: 1px solid; opacity: 0.2; margin: 0px 32px 0px 32px;"></p>
-    <li>
-      <a href="#"><i class="fas fa-sign-out-alt" style="margin-right: 0px;color: #ef6c00;"></i><label
-          style="color: #ef6c00;font-size: 16px;" > ออกจากระบบ</label></a>
-    </li>
-  </ul> -->
-
-  <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+ 
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
