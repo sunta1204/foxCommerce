@@ -29,11 +29,4 @@ public class ProductController {
     	model.addAttribute("product", p);
         return "/detail";
 	}
-	
-	@GetMapping("/")
-    public String welcome(Model model) {
-    	model.addAttribute("message", "Civilized Land");
-        return "/User/dashboard";
-    }
-
 }
