@@ -152,44 +152,12 @@
   <!--/.Double navigation-->
 
   <main>
-    <div class="container-fluid" style="margin-top: 3%;">
-      <div class="table-responsive">
-        <table class="table table-hover text-center">
-          <thead class="black white-text">
-            <tr>
-              <th scope="col">รหัสเพจขายสินค้า</th>
-              <th scope="col">ชื่อเพจ</th>
-              <th scope="col">สถานะของเพจ</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <c:forEach items="${salePageList}" var="salePage">
-              <tr>
-                <td>
-                  ${salePage.page_id}
-                </td>
-                <td>
-                  <a href="/salePage/${salePage.page_id}"> ${salePage.page_name} </a>
-                </td>
-                <td>
-                  <c:if test="${salePage.status=='1'}">
-                    กำลังใช้งาน
-                  </c:if>
-                  <c:if test="${salePage.status=='2'}">
-                    ปิดการใช้งาน
-                  </c:if>
-                </td>
-                <td class="text-center">
-                  <button class="btn btn-warning">แก้ไขชื่อเพจ</button> &nbsp; | &nbsp;
-                  <button class="btn btn-danger">ลบเพจ</button>
-                </td>
-              </tr>
-            </c:forEach>
-          </tbody>
-        </table>
+      <div class="container-fluid" style="margin-top: 5%;;">
+        ${salePageDetail.img_id}
+        ${salePageDetail.img_file_name}
+        ${salePageDetail.page_id}
       </div>
-    </div>
+    
   </main>
 
 
