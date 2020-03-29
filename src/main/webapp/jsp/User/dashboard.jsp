@@ -164,7 +164,7 @@
             </tr>
           </thead>
           <tbody>
-            <c:forEach items="${salePageList}" var="salePage">
+            <c:forEach items="${userSalePageList}" var="salePage">
               <tr>
                 <td>
                   ${salePage.page_id}
