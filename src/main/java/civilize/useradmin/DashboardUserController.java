@@ -51,12 +51,6 @@ public class DashboardUserController {
 					if(user.getType().equals("S")) {
 						session.setAttribute("u_id", user.getU_id());
 						session.setAttribute("username", user.getUsername());
-						session.setAttribute("password", user.getPassword());
-						session.setAttribute("email", user.getEmail());
-						session.setAttribute("tel", user.getTel());
-						session.setAttribute("expiry_date", user.getExpiry_date());
-						session.setAttribute("type", user.getType());
-						session.setAttribute("Inspector", user.getInspector());
 						
 						String user_name = (String) session.getAttribute("username");
 						User userProfile = userDAO.getUser(user_name);
@@ -67,12 +61,6 @@ public class DashboardUserController {
 					}else if (user.getType().equals("G")) {
 						session.setAttribute("u_id", user.getU_id());
 						session.setAttribute("username", user.getUsername());
-						session.setAttribute("password", user.getPassword());
-						session.setAttribute("email", user.getEmail());
-						session.setAttribute("tel", user.getTel());
-						session.setAttribute("expiry_date", user.getExpiry_date());
-						session.setAttribute("type", user.getType());
-						session.setAttribute("Inspector", user.getInspector());
 						
 						String user_name = (String) session.getAttribute("username");
 						User userProfile = userDAO.getUser(user_name);
@@ -82,12 +70,6 @@ public class DashboardUserController {
                     }else if (user.getType().equals("P")) {
 						session.setAttribute("u_id", user.getU_id());
 						session.setAttribute("username", user.getUsername());
-						session.setAttribute("password", user.getPassword());
-						session.setAttribute("email", user.getEmail());
-						session.setAttribute("tel", user.getTel());
-						session.setAttribute("expiry_date", user.getExpiry_date());
-						session.setAttribute("type", user.getType());
-						session.setAttribute("Inspector", user.getInspector());
 						
 						String user_name = (String) session.getAttribute("username");
 						User userProfile = userDAO.getUser(user_name);
@@ -97,12 +79,6 @@ public class DashboardUserController {
                     }else if (user.getType().equals("D")) {
 						session.setAttribute("u_id", user.getU_id());
 						session.setAttribute("username", user.getUsername());
-						session.setAttribute("password", user.getPassword());
-						session.setAttribute("email", user.getEmail());
-						session.setAttribute("tel", user.getTel());
-						session.setAttribute("expiry_date", user.getExpiry_date());
-						session.setAttribute("type", user.getType());
-						session.setAttribute("Inspector", user.getInspector());
 						
 						String user_name = (String) session.getAttribute("username");
 						User userProfile = userDAO.getUser(user_name);
@@ -120,7 +96,7 @@ public class DashboardUserController {
             
         }
         
-    //index_admin
+    //dashboard User
 	@GetMapping("/User/dashboard")
 	public String dashboardUser(Model model ,HttpSession session) throws SQLException {
         int u_id = (int)session.getAttribute("u_id");
@@ -139,6 +115,7 @@ public class DashboardUserController {
 		}	
 	}   
 
+	// sale page detail
     @RequestMapping("/salePage/{page_id}")
     public String salePageDetail(@PathVariable("page_id") int page_id, Model model) throws SQLException {
         ImageContent p = imageContentDAO.getSalePage(page_id);
